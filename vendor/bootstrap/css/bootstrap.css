@@ -43,7 +43,7 @@
 
 @media (max-width: 800px) {
   h1{
-    padding-top: 40%;
+    position:center;
   margin: auto;
   width: 50%;
 }
@@ -393,8 +393,13 @@ h1, h2, h3, h4, h5, h6,
 
 
 h1, .h1 {
-  font-size: 4.5rem;
-  font-family: 'Rajdhani', sans-serif;
+  width:100%;
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 
 }
 
@@ -575,8 +580,7 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  height:100%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -614,12 +618,12 @@ pre code {
 }
 
 .row {
+  height:100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+
 }
 
 .no-gutters {
@@ -641,8 +645,7 @@ pre code {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+
 }
 
 .col {
